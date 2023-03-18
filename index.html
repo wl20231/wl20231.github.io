@@ -1,16 +1,64 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-    </head>
-    <body>
-        <form method="post" action="save.php">
-            用户名：
-        <input type="text" name="myname">
-            密码：
-        <input type="password" name="pass">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聊天室 Of wl</title>
+</head>
+<body>
+    <div class="box">
+        <div class="login">
+            <input type="text" id="user-name">
+            <ul>
+                <li>
 
-        </form>
-    </body>
+                </li>
+            </ul>
+        </div>
+    </div>
+   
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .box{
+            width:100%;
+            height:100vh;
+            background: url(https://img.zcool.cn/community/0191855d5669f0a80120695cfefcec.jpg@2o.jpg)no-repeat center/cover ;
+            display: flex;
+            align-items:center;
+            justify-content:center;
+           
+        }
+        .login{
+            width: 700px;
+            height: 500px;
+            background-color: pink;
+        }
+        #user-name{
+            border:1px solid white;
+            padding: 10px;
+            margin:0 auto;
+            outline: none;
+            margin-top: 20px;
+        }
+        #user-name:focus{
+            border-color: blue;
+            box-shadow: inset;
+        }
+        .box>ul{
+            width:100%;
+            height:300px;
+            background-color: gray;
+        }
+        .box>ul>li{
+            list-style: none;
+            width:100px;
+            height:100px;
+            background-color:blue;
+        }
+    </style>
+</body>
 </html>
